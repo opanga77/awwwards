@@ -14,7 +14,7 @@ import os
 import dj_database_url
 import django_heroku
 from decouple import config
-from backports import csv
+from backports import Csv
 from socket import socket
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -46,7 +46,7 @@ else:
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS=['localhost', '127.0.0.1',config('ALLOWED_HOSTS', cast=csv())]
+ALLOWED_HOSTS=['localhost', '127.0.0.1',config('ALLOWED_HOSTS', cast=Csv())]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
