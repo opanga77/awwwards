@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import dj_database_url
 import django_heroku
-from decouple import config,Csv
+from decouple import config
+from backports import csv
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -53,7 +54,7 @@ ALLOWED_HOSTS=['localhost', '127.0.0.1',config('ALLOWED_HOSTS', cast=Csv())]
 SECRET_KEY = 'wtc27lv)zu_!amcya-6acb4517t@4^wydih+pl_15)v4&1emq0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
 # ALLOWED_HOSTS = []
 
