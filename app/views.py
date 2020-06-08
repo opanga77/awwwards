@@ -12,7 +12,7 @@ from .models import  *
 from .serializer import *
 from .permissions import IsAdminOrReadOnly
 from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 # Create your views here.
 
