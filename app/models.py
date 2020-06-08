@@ -48,7 +48,7 @@ class Project(models.Model):
     description = HTMLField()
     # description = models.CharField(max_length=60,blank=True)
     link = models.URLField(blank=True)
-    user = models.ForeignKey(User, null=True)
+    user = models.ForeignKey(User, null=True,on_delete=models.CASCADE,)
     profile = models.ForeignKey(Profile,null=True,on_delete=models.CASCADE)
     timestamp = models.DateTimeField(auto_now_add=True)
 
