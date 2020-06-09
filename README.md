@@ -45,7 +45,8 @@ Then: User session is ended<br>
 * Django was used as the framework of choice
 * Heroku was used in deploying the live site
 * Postman was used in testing the API
-
+ 
+ ## Credits
 
 ### Support and contact details
 * Contact me through my email: andersoking77@gmail.com
