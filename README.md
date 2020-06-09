@@ -48,6 +48,7 @@ Then: User session is ended<br>
  
  ## Credits
 - google
+- stackoverflow
 ### Support and contact details
 * Contact me through my email: andersoking77@gmail.com
 * The source code is also contained within the folder containing this ReadMe with comments on the code thus third-party support can be offered.
